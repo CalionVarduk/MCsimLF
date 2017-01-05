@@ -1,0 +1,361 @@
+  MCsimLF.MCSimSettingsForm.resources - Embedded, ContainedInManifestFile, 
+  MCsimLF.MCSimForm.resources - Embedded, ContainedInManifestFile, 
+  MCsimLF.MCViewSettingsForm.resources - Embedded, ContainedInManifestFile, 
+  MCsimLF.SecondaryForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly MCsimLF, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct MCsimLF.FileManip.KeyedPair<unsigned char\,unsigned short>: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte key : Public
+    UInt16 item : Public
+  Methods:
+    set(Byte, UInt16): PrivateScope, Public, HideBySig
+Class MCsimLF.FileManip.CVAwfulCipher: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 minBlockLength IsConst : Public, Static, HasDefault
+    UInt32 maxBlockLength IsConst : Public, Static, HasDefault
+  Methods:
+    setKey(Byte[]): PrivateScope, Public, HideBySig
+    getKey(): PrivateScope, Public, HideBySig
+    getBlockLength(): PrivateScope, Public, HideBySig
+    adjustBeforeEncryption(Byte[]&): PrivateScope, Public, HideBySig
+    adjustAfterDecryption(Byte[]&): PrivateScope, Public, HideBySig
+    encrypt(Byte[]): PrivateScope, Public, HideBySig
+    decrypt(Byte[]): PrivateScope, Public, HideBySig
+Class MCsimLF.SimSettings: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean fccOn : Public, Static
+    Boolean pbcOn : Public, Static
+    Double boxOriginX : Public, Static
+    Double boxOriginY : Public, Static
+    Double boxOriginZ : Public, Static
+    Double boxLengthX : Public, Static
+    Double boxLengthY : Public, Static
+    Double boxLengthZ : Public, Static
+    Double boxLengthHalfX : Public, Static
+    Double boxLengthHalfY : Public, Static
+    Double boxLengthHalfZ : Public, Static
+Struct MCsimLF.MC.Vector3D: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double x : Public
+    Double y : Public
+    Double z : Public
+  Methods:
+    getLengthSquared(): PrivateScope, Public, HideBySig
+    getLength(): PrivateScope, Public, HideBySig
+    getNormalised(): PrivateScope, Public, HideBySig
+    getNegated(): PrivateScope, Public, HideBySig
+    applyPbc(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct MCsimLF.MC.Point3D: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double x : Public
+    Double y : Public
+    Double z : Public
+  Methods:
+    getDistanceSquaredTo(Point3D): PrivateScope, Public, HideBySig
+    getDistanceTo(Point3D): PrivateScope, Public, HideBySig
+    add(Vector3D): PrivateScope, Public, HideBySig
+    subtract(Vector3D): PrivateScope, Public, HideBySig
+    applyPbc(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Final, Virtual, HideBySig
+Class MCsimLF.MC.RandomGenerator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    next(Double, Double): PrivateScope, Public, HideBySig
+    next(Double): PrivateScope, Public, HideBySig
+    next(): PrivateScope, Public, HideBySig
+    nextPoint(Point3D, Point3D): PrivateScope, Public, HideBySig
+    getSeed(): PrivateScope, Public, HideBySig
+Class MCsimLF.FileManip.HuffmanCompression: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    compress(Byte[]): PrivateScope, Public, Static, HideBySig
+    decompress(Byte[]): PrivateScope, Public, Static, HideBySig
+    getEntropy(Byte[]): PrivateScope, Public, Static, HideBySig
+    getAverageCodeLength(Byte[]): PrivateScope, Public, Static, HideBySig
+    getCodeEfficiency(Byte[]): PrivateScope, Public, Static, HideBySig
+Struct MCsimLF.FileManip.HuffmanCompression+TreeItem: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int16, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 iParent : Public
+    Int32 iLeft : Public
+    Int32 iRight : Public
+    Int16 byte : Public
+    Boolean visited : Public
+    TreeItem EMPTY IsConst : Public, Static
+Struct MCsimLF.FileManip.HuffmanCompression+TreeRoot: AutoLayout, AnsiClass, Class, NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 index : Public
+    Int32 weight : Public
+    TreeRoot EMPTY IsConst : Public, Static
+  Methods:
+    op_GreaterThan(TreeRoot, TreeRoot): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThan(TreeRoot, TreeRoot): PrivateScope, Public, Static, HideBySig, SpecialName
+Class MCsimLF.FileManip.SimFileManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    save(String, Byte[]): PrivateScope, Public, HideBySig
+    load(String): PrivateScope, Public, HideBySig
+Class MCsimLF.MC.MonteCarlo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Double sigma IsConst : Public, Static
+    Double epsilon IsConst : Public, Static
+    Double constBoltzmann IsConst : Public, Static
+  Methods:
+    getFccCount(Int32[]): PrivateScope, Public, Static, HideBySig
+    initializeNormal(UInt32, Vector3D, Double, Point3D): PrivateScope, Public, HideBySig
+    initializeFcc(Int32[], Vector3D, Double, Point3D): PrivateScope, Public, HideBySig
+    calculatePotential(UInt32, UInt32): PrivateScope, Public, HideBySig
+    calculateAtomEnergy(UInt32): PrivateScope, Public, HideBySig
+    calculateEnergy(): PrivateScope, Public, HideBySig
+    metropolisStep(): PrivateScope, Public, HideBySig
+    getInitialBoxSize(): PrivateScope, Public, HideBySig
+    getInitialBoxVolume(): PrivateScope, Public, HideBySig
+    getTemperature(): PrivateScope, Public, HideBySig
+    getAtomCount(): PrivateScope, Public, HideBySig
+    getAtom(UInt32): PrivateScope, Public, HideBySig
+    getOrigin(): PrivateScope, Public, HideBySig
+    getStep(): PrivateScope, Public, HideBySig
+    getEnergy(): PrivateScope, Public, HideBySig
+    getEnergyValueAt(UInt32): PrivateScope, Public, HideBySig
+    getEnergySyncInterval(): PrivateScope, Public, HideBySig
+    setEnergySyncInterval(UInt32): PrivateScope, Public, HideBySig
+    saveToFile(String): PrivateScope, Public, HideBySig
+    loadFromFile(String): PrivateScope, Public, HideBySig
+Class MCsimLF.FileManip.MinHeap<MCsimLF::FileManip::HuffmanCompression::TreeRoot>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(UInt32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getSize(): PrivateScope, Public, HideBySig
+    insert(TreeRoot): PrivateScope, Public, HideBySig
+    extract(): PrivateScope, Public, HideBySig
+Class MCsimLF.Helpers.UI.LabelButtonMouseClickHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, MouseEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, MouseEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class MCsimLF.Helpers.UI.LabelButton: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Label
+    Void .ctor(System.Windows.Forms.Control, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    MCsimLF.Helpers.UI.LabelButtonMouseClickHandler MouseClickExtension : Public
+    System.Drawing.Color normalBackColor : Public
+    System.Drawing.Color normalForeColor : Public
+    System.Drawing.Color mouseOverBackColor : Public
+    System.Drawing.Color mouseOverForeColor : Public
+    System.Drawing.Color activeBackColor : Public
+    System.Drawing.Color activeForeColor : Public
+    System.Drawing.Color activeMouseOverBackColor : Public
+    System.Drawing.Color activeMouseOverForeColor : Public
+    System.Drawing.Color disabledBackColor : Public
+    System.Drawing.Color disabledForeColor : Public
+  Properties:
+    Boolean isOnClickDeactivatable 'get set' : 
+    Boolean runOnMouseClickProcedure 'get set' : 
+    Boolean changeColorsOnActivation 'get set' : 
+    Boolean changeColorsOnMouseOver 'get set' : 
+    Boolean isActivatedOnHold 'get set' : 
+    Boolean isActivatedOnClick 'get set' : 
+    Boolean isActivated 'get set' : 
+    Boolean isMouseHovering 'get set' : 
+    Boolean isMouseWithinBounds 'get set' : 
+    Boolean isMouseMoving 'get set' : 
+    Boolean isMouseDown 'get set' : 
+    Boolean isEnabled 'get set' : 
+  Methods:
+    get_isEnabled(): PrivateScope, Public, HideBySig, SpecialName
+    get_isMouseDown(): PrivateScope, Public, HideBySig, SpecialName
+    get_isMouseMoving(): PrivateScope, Public, HideBySig, SpecialName
+    get_isMouseWithinBounds(): PrivateScope, Public, HideBySig, SpecialName
+    get_isMouseHovering(): PrivateScope, Public, HideBySig, SpecialName
+    get_isActivated(): PrivateScope, Public, HideBySig, SpecialName
+    get_isActivatedOnClick(): PrivateScope, Public, HideBySig, SpecialName
+    set_isActivatedOnClick(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_isActivatedOnHold(): PrivateScope, Public, HideBySig, SpecialName
+    set_isActivatedOnHold(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_changeColorsOnMouseOver(): PrivateScope, Public, HideBySig, SpecialName
+    set_changeColorsOnMouseOver(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_changeColorsOnActivation(): PrivateScope, Public, HideBySig, SpecialName
+    set_changeColorsOnActivation(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_runOnMouseClickProcedure(): PrivateScope, Public, HideBySig, SpecialName
+    set_runOnMouseClickProcedure(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_isOnClickDeactivatable(): PrivateScope, Public, HideBySig, SpecialName
+    set_isOnClickDeactivatable(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    setFixedSize(Size): PrivateScope, Public, HideBySig
+    resetDisplayedColors(): PrivateScope, Public, HideBySig
+    forceActivate(): PrivateScope, Public, HideBySig
+    forceDeactivate(): PrivateScope, Public, HideBySig
+    enable(): PrivateScope, Public, HideBySig
+    disable(): PrivateScope, Public, HideBySig
+Class MCsimLF.Helpers.UI.ButtonHorizontalMenu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Panel
+    Void .ctor(System.Windows.Forms.Control, System.String, Int32, System.Drawing.Point): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Windows.Forms.Control, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Count 'get ' : 
+    System.Drawing.Point StartOffset 'get set' : 
+    Int32 Spacing 'get set' : 
+  Methods:
+    get_Spacing(): PrivateScope, Public, HideBySig, SpecialName
+    set_Spacing(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_StartOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_StartOffset(Point): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    addButton(String, String): PrivateScope, Public, HideBySig
+    removeButton(UInt32): PrivateScope, Public, HideBySig
+    op_Subscript(Int32): PrivateScope, Public, HideBySig, SpecialName
+    getButton(UInt32): PrivateScope, Public, HideBySig
+Class MCsimLF.Helpers.UI.CheckBoxMouseClickHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, MouseEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, MouseEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class MCsimLF.OpenGL.OpenGLMouseEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, MouseEventArgs): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, MouseEventArgs, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class MCsimLF.OpenGL.OpenGLView: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.NativeWindow
+    Void .ctor(System.Windows.Forms.Form, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    MCsimLF.OpenGL.OpenGLMouseEventHandler MouseMove : Public
+    MCsimLF.OpenGL.OpenGLMouseEventHandler MouseDown : Public
+    MCsimLF.OpenGL.OpenGLMouseEventHandler MouseUp : Public
+  Methods:
+    resize(Int32, Int32): PrivateScope, Public, HideBySig
+    setBackgroundColor(Color): PrivateScope, Public, HideBySig
+    getBackgroundColor(): PrivateScope, Public, HideBySig
+    drawScene(): PrivateScope, Public, HideBySig
+    getPosition(): PrivateScope, Public, HideBySig
+    getPositionX(): PrivateScope, Public, HideBySig
+    getPositionY(): PrivateScope, Public, HideBySig
+    getPositionZ(): PrivateScope, Public, HideBySig
+    setPosition(Single, Single, Single): PrivateScope, Public, HideBySig
+    setPosition(Point3D): PrivateScope, Public, HideBySig
+    offsetPosition(Single, Single, Single): PrivateScope, Public, HideBySig
+    offsetPosition(Vector3D): PrivateScope, Public, HideBySig
+    setPositionX(Single): PrivateScope, Public, HideBySig
+    offsetPositionX(Single): PrivateScope, Public, HideBySig
+    setPositionY(Single): PrivateScope, Public, HideBySig
+    offsetPositionY(Single): PrivateScope, Public, HideBySig
+    setPositionZ(Single): PrivateScope, Public, HideBySig
+    offsetPositionZ(Single): PrivateScope, Public, HideBySig
+    getRotationX(): PrivateScope, Public, HideBySig
+    getRotationY(): PrivateScope, Public, HideBySig
+    setRotation(Single, Single): PrivateScope, Public, HideBySig
+    offsetRotation(Single, Single): PrivateScope, Public, HideBySig
+    setRotationX(Single): PrivateScope, Public, HideBySig
+    offsetRotationX(Single): PrivateScope, Public, HideBySig
+    setRotationY(Single): PrivateScope, Public, HideBySig
+    offsetRotationY(Single): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class MCsimLF.OpenGL.MonteCarloGL: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MCsimLF.OpenGL.OpenGLView
+    Void .ctor(System.Windows.Forms.Form, Int32, Int32, Int32, Int32, MCsimLF.MC.MonteCarlo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    updateSimulation(): PrivateScope, Public, HideBySig
+    setSphereNearColor(Color): PrivateScope, Public, HideBySig
+    setSphereFarColor(Color): PrivateScope, Public, HideBySig
+    getSphereNearColor(): PrivateScope, Public, HideBySig
+    getSphereFarColor(): PrivateScope, Public, HideBySig
+    setPositionMouseDeltas(Single, Single, Single): PrivateScope, Public, HideBySig
+    setRotationMouseDeltas(Single, Single): PrivateScope, Public, HideBySig
+Class MCsimLF.Helpers.FpsCounterUpdateHandler: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class MCsimLF.Helpers.SimpleFpsCounter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    MCsimLF.Helpers.FpsCounterUpdateHandler FrameCountUpdate : Public
+  Properties:
+    UInt32 UpdateInterval 'get set' : 
+  Methods:
+    get_UpdateInterval(): PrivateScope, Public, HideBySig, SpecialName
+    set_UpdateInterval(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    countFrame(): PrivateScope, Public, HideBySig
+    getFpsCount(): PrivateScope, Public, HideBySig
+Class MCsimLF.SecondaryForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(MCsimLF.Helpers.UI.LabelButton): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean isShown 'get set' : 
+  Methods:
+    get_isShown(): PrivateScope, Public, HideBySig, SpecialName
+    showForm(): PrivateScope, Public, HideBySig
+Class MCsimLF.MCSimSettingsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MCsimLF.SecondaryForm
+    Void .ctor(MCsimLF.Helpers.UI.LabelButton): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    addConfirmEvent(LabelButtonMouseClickHandler): PrivateScope, Public, HideBySig
+    parseStepsPerFrame(): PrivateScope, Public, HideBySig
+    parseAtomCount(): PrivateScope, Public, HideBySig
+    parseFccAtomCount(): PrivateScope, Public, HideBySig
+    parseTemperature(): PrivateScope, Public, HideBySig
+    parseBoxSize(): PrivateScope, Public, HideBySig
+    parseOrigin(): PrivateScope, Public, HideBySig
+    parseEnergySyncInterval(): PrivateScope, Public, HideBySig
+    isFccOn(): PrivateScope, Public, HideBySig
+    isPbcOn(): PrivateScope, Public, HideBySig
+Class MCsimLF.MCViewSettingsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MCsimLF.SecondaryForm
+    Void .ctor(MCsimLF.Helpers.UI.LabelButton): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    addConfirmEvent(LabelButtonMouseClickHandler): PrivateScope, Public, HideBySig
+    parseSphereNearColor(): PrivateScope, Public, HideBySig
+    parseSphereFarColor(): PrivateScope, Public, HideBySig
+    parseBackgroundColor(): PrivateScope, Public, HideBySig
+Class MCsimLF.MCEnergyGraphForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MCsimLF.SecondaryForm
+    Void .ctor(MCsimLF.Helpers.UI.LabelButton, MCsimLF.MC.MonteCarlo): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    updateGraph(): PrivateScope, Public, HideBySig
+    resetGraph(): PrivateScope, Public, HideBySig
+    Event_KeyDown(Object, KeyEventArgs): PrivateScope, Public, HideBySig
+    Event_KeyUp(Object, KeyEventArgs): PrivateScope, Public, HideBySig
+Class MCsimLF.MCSimInfoForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :MCsimLF.SecondaryForm
+    Void .ctor(MCsimLF.Helpers.UI.LabelButton): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setInfo(MonteCarlo): PrivateScope, Public, HideBySig
+Class MCsimLF.MCSimForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

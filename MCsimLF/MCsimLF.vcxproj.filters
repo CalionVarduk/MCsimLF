@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\MC">
+      <UniqueIdentifier>{b8019807-1d0c-426c-b83d-c818861a4d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGL">
+      <UniqueIdentifier>{d2a25eeb-fe15-426f-bff8-f7c8682e4528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers">
+      <UniqueIdentifier>{1692a2bd-e92a-457f-8245-d18eb9db926b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MC">
+      <UniqueIdentifier>{769a1054-2ab1-480a-ac71-3a3b80bc9168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{59c9942e-d001-402a-a297-884b4dd43158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OpenGL">
+      <UniqueIdentifier>{99d7e7d8-24eb-4637-a342-3dc8f9875c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FileManip">
+      <UniqueIdentifier>{bbf434c5-fb35-450a-bbd3-068567f3b93d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FileManip">
+      <UniqueIdentifier>{d47ad5b9-ba46-4500-8e40-533646b73f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers\UI">
+      <UniqueIdentifier>{7ba364f9-5662-49cd-ae35-782f16da284f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers\UI">
+      <UniqueIdentifier>{f8ab27b0-7d68-4a3f-b9a1-5769ed86f7e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MonteCarlo.cpp">
+      <Filter>Source Files\MC</Filter>
+    </ClCompile>
+    <ClCompile Include="Point3D.cpp">
+      <Filter>Source Files\MC</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3D.cpp">
+      <Filter>Source Files\MC</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomGenerator.cpp">
+      <Filter>Source Files\MC</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBoxParser.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFpsCounter.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLView.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="MonteCarloGL.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HuffmanCompression.cpp">
+      <Filter>Source Files\FileManip</Filter>
+    </ClCompile>
+    <ClCompile Include="CVAwfulCipher.cpp">
+      <Filter>Source Files\FileManip</Filter>
+    </ClCompile>
+    <ClCompile Include="SimFileManager.cpp">
+      <Filter>Source Files\FileManip</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonHorizontalMenu.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphBox.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LabelButton.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitledCheckBox.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitledLabel.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitledTextBox.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitledLabelList.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitledTextBoxList.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TitledCheckBoxList.cpp">
+      <Filter>Source Files\Helpers\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SecondaryForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFpsCounter.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Limiter.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBoxParser.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="MonteCarlo.h">
+      <Filter>Header Files\MC</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLView.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="MonteCarloGL.h">
+      <Filter>Header Files\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Point3D.h">
+      <Filter>Header Files\MC</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3D.h">
+      <Filter>Header Files\MC</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomGenerator.h">
+      <Filter>Header Files\MC</Filter>
+    </ClInclude>
+    <ClInclude Include="MCSimSettingsForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCViewSettingsForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HuffmanCompression.h">
+      <Filter>Header Files\FileManip</Filter>
+    </ClInclude>
+    <ClInclude Include="CVAwfulCipher.h">
+      <Filter>Header Files\FileManip</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHeap.h">
+      <Filter>Header Files\FileManip</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyedPair.h">
+      <Filter>Header Files\FileManip</Filter>
+    </ClInclude>
+    <ClInclude Include="SimFileManager.h">
+      <Filter>Header Files\FileManip</Filter>
+    </ClInclude>
+    <ClInclude Include="MCEnergyGraphForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCSimForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MCSimInfoForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonHorizontalMenu.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphBox.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LabelButton.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitledCheckBox.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitledControl.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitledLabel.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitledTextBox.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitledVerticalList.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitledLabelList.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitledTextBoxList.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TitledCheckBoxList.h">
+      <Filter>Header Files\Helpers\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SimSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorExtensions.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MCSimSettingsForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCViewSettingsForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondaryForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCSimForm.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

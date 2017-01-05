@@ -1,0 +1,27 @@
+﻿  CVAwfulCipher.cpp
+  GraphBox.cpp
+  ButtonHorizontalMenu.cpp
+  HuffmanCompression.cpp
+  TitledCheckBoxList.cpp
+  TitledLabel.cpp
+  LabelButton.cpp
+  TitledCheckBox.cpp
+  MonteCarlo.cpp
+  Program.cpp
+  MonteCarloGL.cpp
+  OpenGLView.cpp
+  Point3D.cpp
+  RandomGenerator.cpp
+  SimpleFpsCounter.cpp
+  SimFileManager.cpp
+  TextBoxParser.cpp
+  TitledLabelList.cpp
+  TitledTextBox.cpp
+  TitledTextBoxList.cpp
+  Generating Code...
+  Compiling...
+  Vector3D.cpp
+  Generating Code...
+  .NETFramework,Version=v4.5.AssemblyAttributes.cpp
+OpenGLView.obj : warning LNK4248: unresolved typeref token (01000022) for 'GLUquadric'; image may not run
+  MCsimLF.vcxproj -> E:\programowanie\c\monte carlo\MCsimLF\Debug\MCsimLF.exe

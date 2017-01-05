@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{416ECAA9-FBC6-4D59-AAA3-3651824D1699}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>MCsimLF</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>openGL32.lib;gdi32.lib;User32.lib;odbc32.lib;odbccp32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CVAwfulCipher.cpp" />
+    <ClCompile Include="GraphBox.cpp" />
+    <ClCompile Include="ButtonHorizontalMenu.cpp" />
+    <ClCompile Include="HuffmanCompression.cpp" />
+    <ClCompile Include="TitledCheckBoxList.cpp" />
+    <ClCompile Include="TitledLabel.cpp" />
+    <ClCompile Include="LabelButton.cpp" />
+    <ClCompile Include="TitledCheckBox.cpp" />
+    <ClCompile Include="MonteCarlo.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="MonteCarloGL.cpp" />
+    <ClCompile Include="OpenGLView.cpp" />
+    <ClCompile Include="Point3D.cpp" />
+    <ClCompile Include="RandomGenerator.cpp" />
+    <ClCompile Include="SimpleFpsCounter.cpp" />
+    <ClCompile Include="SimFileManager.cpp" />
+    <ClCompile Include="TextBoxParser.cpp" />
+    <ClCompile Include="TitledLabelList.cpp" />
+    <ClCompile Include="TitledTextBox.cpp" />
+    <ClCompile Include="TitledTextBoxList.cpp" />
+    <ClCompile Include="Vector3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ColorExtensions.h" />
+    <ClInclude Include="CVAwfulCipher.h" />
+    <ClInclude Include="SimSettings.h" />
+    <ClInclude Include="TitledCheckBoxList.h" />
+    <ClInclude Include="TitledLabelList.h" />
+    <ClInclude Include="TitledTextBoxList.h" />
+    <ClInclude Include="TitledVerticalList.h" />
+    <ClInclude Include="GraphBox.h" />
+    <ClInclude Include="MCEnergyGraphForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ButtonHorizontalMenu.h" />
+    <ClInclude Include="HuffmanCompression.h" />
+    <ClInclude Include="TitledLabel.h" />
+    <ClInclude Include="KeyedPair.h" />
+    <ClInclude Include="LabelButton.h" />
+    <ClInclude Include="TitledCheckBox.h" />
+    <ClInclude Include="MCSimInfoForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MCSimSettingsForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MCViewSettingsForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MinHeap.h" />
+    <ClInclude Include="MonteCarlo.h" />
+    <ClInclude Include="MCSimForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Limiter.h" />
+    <ClInclude Include="OpenGLView.h">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
+    <ClInclude Include="MonteCarloGL.h" />
+    <ClInclude Include="SimFileManager.h" />
+    <ClInclude Include="TextBoxParser.h" />
+    <ClInclude Include="SecondaryForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SimpleFpsCounter.h" />
+    <ClInclude Include="Point3D.h" />
+    <ClInclude Include="RandomGenerator.h" />
+    <ClInclude Include="TitledControl.h" />
+    <ClInclude Include="TitledTextBox.h" />
+    <ClInclude Include="Vector3D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MCSimSettingsForm.resx">
+      <DependentUpon>MCSimSettingsForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCSimForm.resx">
+      <DependentUpon>MCSimForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCViewSettingsForm.resx">
+      <DependentUpon>MCViewSettingsForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondaryForm.resx">
+      <DependentUpon>SecondaryForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
